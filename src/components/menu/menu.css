@@ -1,0 +1,33 @@
+.left-menu {
+    border: 1px solid red;
+    height: 100vh;
+    width: 100px;
+    transition: width 1s;
+}
+
+.left-menu-fold {
+    height: 100vh;
+    width: 0px;
+    overflow: hidden;
+    transition: width 1s;
+}
+
+.menu {
+    margin: 0px 5px;
+    border: 1px solid red;
+    cursor: pointer;
+    position: relative;
+    background-color: lightblue;
+}
+
+.two-menu-list {
+    display: none;
+}
+
+.menu:hover .two-menu-list {
+    top: 0px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: -100px
+}
